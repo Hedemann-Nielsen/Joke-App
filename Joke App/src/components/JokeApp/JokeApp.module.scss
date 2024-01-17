@@ -1,0 +1,28 @@
+.joke {
+	margin: 200px 50px 0 50px;
+	text-align: center;
+	&::first-letter {
+		text-transform: uppercase;
+	}
+	p {
+		padding: 5px;
+		line-height: 10px;
+	}
+	p:first-child {
+		padding-bottom: 20px;
+	}
+}
+
+.newJoke {
+	position: absolute;
+	left: 50%;
+	top: 38%;
+	transform: translateX(-50%);
+	background-color: rgb(70, 126, 233);
+	color: white;
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+	cursor: pointer;
+	text-transform: capitalize;
+}

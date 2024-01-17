@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	min-height: 100vh;
+	background: rgb(70, 126, 233);
+	background: linear-gradient(
+		0deg,
+		rgba(70, 126, 233, 1) 0%,
+		rgba(205, 216, 236, 1) 100%
+	);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+h1 {
+	font-family: "Itim", cursive;
+	text-transform: capitalize;
+	font-size: 30px;
+}
