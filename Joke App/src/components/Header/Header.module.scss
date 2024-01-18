@@ -3,7 +3,54 @@
 	padding: 20px;
 	display: flex;
 	justify-content: space-between;
-	.FaGear {
+	button {
+		background-color: transparent;
+		border: none;
+		font-size: 30px;
 		cursor: pointer;
+		.FaGear {
+			transition: transform 0.3s ease-in-out;
+		}
+		.rotateGear {
+			transform: rotate(180deg); /* Ændr graden, hvis nødvendigt */
+		}
+	}
+}
+
+.Modal {
+	height: 100vw;
+	margin: 2%;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0.882);
+	padding: 50px 0;
+	h2 {
+		text-align: center;
+		font-size: 100%;
+		padding: 20px;
+	}
+
+	button {
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		.IoMdCloseCircle {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			font-size: 30px;
+		}
+	}
+	.setttingContainer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 8%;
+		.IoToggleSharp {
+			font-size: 30px;
+		}
+		p {
+			font-size: 80%;
+			padding-bottom: 20px;
+		}
 	}
 }

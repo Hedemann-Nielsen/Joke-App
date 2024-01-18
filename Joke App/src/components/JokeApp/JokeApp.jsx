@@ -8,7 +8,7 @@ export const JokeApp = () => {
   useEffect(() => {
     
     getData();
-  }, []); 
+  }, [setJoke]); 
 
   const getData = async () => {
     const url = "https://official-joke-api.appspot.com/random_joke";
@@ -22,6 +22,7 @@ export const JokeApp = () => {
     }
   };
 
+
   const handleNewJokeClick = () => {
     getData();
   };
@@ -29,12 +30,11 @@ export const JokeApp = () => {
   return (
     <>
       <div className={style.joke}>
-        <p key={`${joke.id}_type`} >Type of joke: {joke.type}</p>
-        <p key={`${joke.id}_setup`}>{joke.setup}</p>
-        <p key={`${joke.id}_punchline`}>{joke.punchline}</p>
+        <p>Type of joke: {joke.type}</p>
+        <p>{joke.setup}</p>
+        <p>{joke.punchline}</p>
       </div>
 
-      {/* New Joke button */}
       <button className={style.newJoke} onClick={handleNewJokeClick}>
         new joke
       </button>

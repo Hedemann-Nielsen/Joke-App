@@ -1,0 +1,14 @@
+.Modal {
+	width: 100%;
+	animation: slideInFromRight 1s ease-in-out;
+	border: none;
+}
+
+@keyframes slideInFromRight {
+	to {
+		transform: translateX(0);
+	}
+	from {
+		transform: translateX(100%);
+	}
+}
